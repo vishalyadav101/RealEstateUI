@@ -1,43 +1,127 @@
 <div class="container">
   <h2 class="mb-4">Welcome Dashboard</h2>
 
-  <div class="row">
+  <div class="row g-4">
     <div class="col-md-3">
-      <div class="card shadow">
+      <div class="card shadow-sm">
         <div class="card-body">
           <h5>Total Properties</h5>
 
-          <h2>0</h2>
+          <h2>{{ dashboard?.totalProperties ?? 0 }}</h2>
         </div>
       </div>
     </div>
 
     <div class="col-md-3">
-      <div class="card shadow">
+      <div class="card shadow-sm">
         <div class="card-body">
           <h5>Total Owners</h5>
 
-          <h2>0</h2>
+          <h2>{{ dashboard?.totalOwners ?? 0 }}</h2>
         </div>
       </div>
     </div>
 
     <div class="col-md-3">
-      <div class="card shadow">
+      <div class="card shadow-sm">
         <div class="card-body">
           <h5>Total Cities</h5>
 
-          <h2>0</h2>
+          <h2>{{ dashboard?.totalCities ?? 0 }}</h2>
         </div>
       </div>
     </div>
 
     <div class="col-md-3">
-      <div class="card shadow">
+      <div class="card shadow-sm">
         <div class="card-body">
           <h5>Total Areas</h5>
 
-          <h2>0</h2>
+          <h2>{{ dashboard?.totalAreas ?? 0 }}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4 mt-2">
+    <div class="col-md-3">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5>Available Properties</h5>
+
+          <h2>{{ dashboard?.availableProperties ?? 0 }}</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5>Sold Properties</h5>
+
+          <h2>{{ dashboard?.soldProperties ?? 0 }}</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5>Rented Properties</h5>
+
+          <h2>{{ dashboard?.rentedProperties ?? 0 }}</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5>Featured Properties</h5>
+
+          <h2>{{ dashboard?.featuredProperties ?? 0 }}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4 mt-2">
+    <div class="col-md-3">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5>Property Types</h5>
+
+          <h2>{{ dashboard?.totalPropertyTypes ?? 0 }}</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5>Categories</h5>
+
+          <h2>{{ dashboard?.totalCategories ?? 0 }}</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5>Amenities</h5>
+
+          <h2>{{ dashboard?.totalAmenities ?? 0 }}</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5>Total Enquiries</h5>
+
+          <h2>{{ dashboard?.totalEnquiries ?? 0 }}</h2>
         </div>
       </div>
     </div>
