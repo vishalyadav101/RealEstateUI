@@ -2,6 +2,10 @@
   <div class="container-fluid">
     <span class="navbar-brand fw-bold"> Real Estate Management System </span>
 
-    <div class="text-white">Welcome, Admin</div>
+    <div class="d-flex align-items-center">
+      <span class="text-white me-3"> Welcome, {{ fullName }} </span>
+
+      <button class="btn btn-danger btn-sm" (click)="logout()">Logout</button>
+    </div>
   </div>
 </nav>
